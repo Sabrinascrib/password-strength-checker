@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(#8c3ff0, #6a09e7);
+}
+.wrapper {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  width: 100px;
+  margin: 250px 0px 100px 0px;
+}
+
+.container {
+  position: relative;
+  max-width: 460px;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  padding: 30px;
+  margin: 0 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .input-box {
+  position: relative;
+}
+.input-box .show_hide {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a6a6a6;
+  padding: 5px;
+  cursor: pointer;
+}
+.input-box input {
+  height: 60px;
+  width: 100%;
+  border: 2px solid #d3d3d3;
+  border-radius: 4px;
+  font-size: calc(18 / 16 * 1rem);
+  font-weight: 500;
+  color: #333;
+  outline: none;
+  padding: 0 50px 0 16px;
+}
+.container .indicator {
+  display: none;
+}
+.container .indicator.active {
+  display: block;
+  margin-top: 14px;
+}
+.indicator .icon-text {
+  display: flex;
+  align-items: center;
+}
+.icon-text .error_icon {
+  margin-right: 8px;
+}
+.icon-text .text {
+  font-size: calc(14 / 16 * 1rem);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+footer {
+  color: #ae91d4;
+  text-align: center;
+}
